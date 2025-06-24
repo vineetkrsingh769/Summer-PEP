@@ -1,5 +1,7 @@
- /* The cosmetic company "BeautifyMe" wishes to know the alphabetic product code from the barcode. The barcode of the product is a numeric value and the alphabetic product is a string value tagged 'a-j'.
- * The alphabetic range 'a-j' represents the numeric range '0-9'. To produce the alphabetic product code, each digit in the numeric barcode is replaced by the corresponding matching letters.
+ /* The cosmetic company "BeautifyMe" wishes to know the alphabetic product code from the barcode. The barcode of the product is a numeric 
+ value and the alphabetic product is a string value tagged 'a-j'.
+ * The alphabetic range 'a-j' represents the numeric range '0-9'. 
+ To produce the alphabetic product code, each digit in the numeric barcode is replaced by the corresponding matching letters.
  * Write an algorithm to display the alphabetic product code from the numeric barcode.
  * 
  * Input
