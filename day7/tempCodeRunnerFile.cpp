@@ -1,0 +1,1 @@
+cout<<r<<endl;
