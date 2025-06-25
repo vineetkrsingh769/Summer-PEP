@@ -79,8 +79,8 @@ int main() {
     st.pop();
     st.printStack();
     st.pop();
-    st.printStack();
     st.pop();
+    st.printStack();
     st.pop(); // stack underflow
     st.peek();
     st.printStack();
