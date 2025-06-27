@@ -23,7 +23,7 @@ public class countingfrequency  {
         String str = "ABCDABEDABCEA";
         str = str.toUpperCase();  // ensure all uppercase
 
-        for (int i = 65; i <= 80; i++) {  // A (65) to Z (90)
+        for (int i = 65; i <= 90; i++) {  // A (65) to Z (90)
             char ch = (char) i;
             int frequency = 0;
 
