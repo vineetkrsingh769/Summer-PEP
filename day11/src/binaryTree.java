@@ -117,6 +117,6 @@ public class binaryTree {
         LevelOrder(root);
         System.out.println();
 
-        
+
     }
 }

@@ -180,3 +180,69 @@ Unbalanced Binary Tree:
     3       4
 5
 
+
+
+--> Binary Search Tree (BST):
+Left node should be always less than the root node.
+Right node should be always greater than the root node.
+
+8 3 10 1 6 14 4 7 13
+
+                        8
+                3               10
+            1       6               14
+                  4   7           13
+
+Implementation of Binary Search Tree:
+
+1. Insert a node in BST:
+Node insert(Node root, int data) {
+    if (root == null) {
+        return new Node(data);
+    }
+    if (data < root.data) {
+        root.left = insert(root.left, data);
+    } else {
+        root.right = insert(root.right, data);
+    }
+    return root;
+}
+
+2. Search a node in BST:
+Boolean search(Node root, int key) {
+    if (root == null) {
+        return false;
+    }
+    if (root.data == key) {
+        return true;
+
+    return(root.key<key)?search(root.left, key) : search(root.right, key);
+    }   
+}
+
+3. Delete a node in BST:
+50 35 20 30 10 45 40 47 70 60 55 65 80 75 90
+
+Node delete(Node root, int key) {
+    if (root == null) 
+        return root;
+    if (key < root.data) 
+        root.left = delete(root.left, key);
+    else if (key > root.data)
+        root.right = delete(root.right, key);
+    else {
+        if (root.left == null) {
+            Node temp = root.right;
+            return;
+        }
+        else if (root.right == null) {
+            Node temp = root.left;
+            return;
+        }
+        Node temp= minValue(root.right);
+        root.data = temp.data;
+        root.right = delete(root.right, temp.data);
+    }
+    return root;
+    
+}
