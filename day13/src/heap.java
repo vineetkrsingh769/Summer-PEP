@@ -13,5 +13,3 @@ static voidprintArray(int arr[], int n) {
     System.out.println();
 }
 
-
-Problem 2+
