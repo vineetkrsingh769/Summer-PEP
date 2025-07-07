@@ -21,3 +21,39 @@ class Graph {
         printGraph(graph, V+1);
     }
 }
+
+
+with List:
+
+class ListGraph {
+    static int V;
+    static ArrayList<Integer> adj[];
+    
+    ListGraph(int V) {
+        this.V = V;
+        adj = new ArrayList[V+1];
+        for (int i = 0; i <= V; i++) {
+            adj[i] = new ArrayList<>();
+        }
+    }
+    void addEdge(int src, int des) {
+        adj[src].add(des);
+        adj[des].add(src); 
+    }
+
+    void printGraph() {
+        for (int i = 0; i < V; i++) {
+            System.out.println(i+" -> ");
+            System.out.println(adj[i]);
+        }
+    }
+
+    public static void main(String []abc){
+        ListGrahp graph = new ListGraph(4);
+        graph.addEdge(0, 1);
+        graph.addEdge(0, 2);
+        graph.addEdge(2, 1);
+        graph.addEdge(2, 3);
+        printGraph();
+    }
+}
