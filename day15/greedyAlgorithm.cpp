@@ -51,3 +51,12 @@ class Main{
     }
 }
 
+
+
+Problem 2. Job Scheduling with Deadlines:
+Key Points:
+UniProcessor: only one processor is available.
+No Preemption: Every job will not start until first job is completed.
+1 Unit of time: Each job takes 1 unit of time to complete.
+
+
